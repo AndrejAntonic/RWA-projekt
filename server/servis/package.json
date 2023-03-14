@@ -1,0 +1,15 @@
+{
+  "name": "servis",
+  "version": "1.0.0",
+  "description": "Zadaca02 - REST servis",
+  "main": "restServer.js",
+  "scripts": {
+    "start": "NODE_PATH=/usr/lib/node_modules/ node restServer.js ../rwa_aantonic20_conf.csv",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "REST"
+  ],
+  "author": "aantonic20",
+  "license": "GPL-2.0-only"
+}

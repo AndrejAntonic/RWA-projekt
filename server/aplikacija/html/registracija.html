@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registracija</title>
+    <meta charset="UTF-8" />
+    <script src="/js/registracija.js"></script>
+</head>
+
+<body>
+    <header>Registracija</header>
+    <nav>#navigacija#</nav>
+    <main>
+        <div id="poruka">#poruka#</div>
+        <form action="/registracija" method="POST">
+            <label for="ime">Ime</label>
+            <input type="text" name="ime" id="ime" />
+            <br>
+            <label for="prezime">Prezime</label>
+            <input type="text" name="prezime" id="prezime" />
+            <br>
+            <label for="lozinka">Lozinka</label>
+            <input type="password" name="lozinka" id="lozinka" />
+            <br>
+            <label for="email">email</label>
+            <input type="mail" name="email" id="email" />
+            <br>
+            <label for="korime">Korisničko ime</label>
+            <input type="text" name="korime" id="korime" />
+            <br>
+            <input type="submit" value="Registriraj" />
+        </form>
+    </main>
+    <footer>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fspider.foi.hr%2FRWA%2F2022%2Fzadaca_01%2Faantonic20%2Faplikacija%2Fhtml%2Fregistracija.html">Validacija</a>
+    </footer>
+</body>
+
+</html>

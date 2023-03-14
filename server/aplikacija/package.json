@@ -1,0 +1,15 @@
+{
+  "name": "aplikacija",
+  "version": "1.0.0",
+  "description": "Zadaca02 - aplikacija",
+  "main": "appServer.js",
+  "scripts": {
+    "start": "NODE_PATH=/usr/lib/node_modules/ node --experimental-fetch appServer.js ../rwa_aantonic20_conf.csv",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "APP"
+  ],
+  "author": "aantonic20",
+  "license": "GPL-2.0-only"
+}
