@@ -1,0 +1,63 @@
+.grid-container
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 20px
+
+.grid-child-lista
+    text-align: center
+    border-style: solid
+    border-radius: 25px
+    background-color: #D9D9D9
+
+.item1
+    grid-area: naslov
+
+.item2
+    grid-area: lista
+
+.item3
+    grid-area: label_id
+
+.item4
+    grid-area: input_id
+
+.item5
+    grid-area: label_naziv
+
+.item6
+    grid-area: input_naziv
+
+.item7
+    grid-area: gumb_promijeni
+
+.item8
+    grid-area: upozorenje
+
+.item9
+    grid-area: gumb_obrisi
+
+.item10
+    grid-area: gumb_dohvati
+
+.grid-child-glavno
+    display: grid
+    grid-template-areas: 'naslov naslov naslov''lista label_id input_id''lista label_naziv input_naziv''gumb_promijeni gumb_obrisi gumb_dohvati''upozorenje upozorenje upozorenje'
+    text-align: center
+    border-style: solid
+    border-radius: 25px
+    background-color: #D9D9D9
+
+button
+    margin: auto
+
+input
+    margin: auto
+    width: 200px
+    height: 25px
+
+label
+    margin: auto
+    text-align: right
+
+ol
+    margin: auto

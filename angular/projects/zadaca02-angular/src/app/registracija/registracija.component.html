@@ -1,0 +1,19 @@
+<p>Registracija</p>
+<main>
+    <h4 id="poruka"></h4>
+    <div>
+        <form class="grid-container" #form="ngForm">
+            <label for="ime" class="item1">Ime: </label>
+            <input type="text" name="ime" class="item2" id="ime"><br>
+            <label for="prezime" class="item3">Prezime: </label>
+            <input type="text" name="prezime" class="item4" id="prezime"><br>
+            <label for="lozinka" class="item5">Lozinka: </label>
+            <input type="text" name="lozinka" class="item6" id="lozinka"><br>
+            <label for="email" class="item7">E-mail: </label>
+            <input type="text" name="email" class="item8" id="email"><br>
+            <label for="korime" class="item9">Korisniško ime: </label>
+            <input type="text" name="korime" class="item10" id="korime"><br>
+            <input type="button" (click)="send(form)" class="item11" value="Registriraj se">
+        </form>
+    </div>
+</main>

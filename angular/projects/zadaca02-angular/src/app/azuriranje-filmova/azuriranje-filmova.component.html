@@ -1,0 +1,76 @@
+<p>Ažuriranje filmova</p>
+<main>
+    <div id="glavni" class="grid-container">
+        <div class="grid-child-lista">
+            <h3>Popis filmova:</h3>
+                <div id="lista">
+                    <ul id="proba"></ul>
+                </div>
+            </div>
+        <div id="podaci" class="grid-child-podaci">
+            <h3>Podaci o filmu: </h3>
+            <ul id="idk">
+                <li>
+                    <label for="film_id" id="film_id_label">ID: </label>
+                    <input type="text" (keyup)="ucitajPodatke()" id="film_id" name="film_id">
+                </li>
+                <li>
+                    <label for="film_naziv" id="film_naziv_label">Naziv: </label>
+                    <input type="text" id="film_naziv" name="film_naziv">
+                </li>
+                <li>
+                    <label id="film_zanr_label">Žanr: </label>
+                </li>
+                <li>
+                    <label id="film_zanr_id_label">Žanr ID: </label>
+                </li>
+                <li>
+                    <label for="film_trajanje" id="film_trajanje_label">Trajanje: </label>
+                    <input type="text" id="film_trajanje" name="film_trajanje">
+                </li>
+                <li>
+                    <label for="film_datum" id="film_datum_label">Datum unosa: </label>
+                    <input type="text" id="film_datum" name="film_datum">
+                </li>
+                <li>
+                    <label for="film_budzet" id="film_budzet_label">Budžet: </label>
+                    <input type="text" id="film_budzet" name="film_budzet">
+                </li>
+                <li>
+                    <label for="film_prihodi" id="film_prihodi_label">Prihodi: </label>
+                    <input type="text" id="film_prihodi" name="film_prihodi">
+                </li>
+                <li>
+                    <label for="film_jezik" id="film_jezik_label">Jezik: </label>
+                    <input type="text" id="film_jezik" name="film_jezik">
+                </li>
+                <li>
+                    <label for="film_originalni_naziv" id="film_originalni_naziv_label">Originalni naziv: </label>
+                    <input type="text" id="film_originalni_naziv" name="film_originalni_naziv">
+                </li>
+                <li>
+                    <label for="film_opis" id="film_opis_label">Opis: </label>
+                    <input type="text" id="film_opis" name="film_opis">
+                </li>
+                <li>
+                    <label for="film_ocjena" id="film_ocjena_label">Ocjena: </label>
+                    <input type="text" id="film_ocjena" name="film_ocjena">
+                </li>
+                <li>
+                    <label for="film_broj_glasova" id="film_broj_glasova_label">Broj glasova: </label>
+                    <input type="text" id="film_broj_glasova" name="film_broj_glasova">
+                </li>
+                <li>
+                    <label for="film_status" id="film_status_label">Status: </label>
+                    <input type="text" id="film_status" name="film_status">
+                </li>
+                <li>
+                    <label for="film_godina_izlaska" id="film_godina_izlaska_label">Godina izlaska: </label>
+                    <input type="text" id="film_godina_izlaska" name="film_godina_izlaska">
+                </li>
+            </ul>
+            <h3 id="upozorenje"></h3>
+            <button type="button" (click)="azuriraj()">Ažuriraj</button>
+        </div>
+    </div>
+</main>

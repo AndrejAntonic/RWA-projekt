@@ -1,0 +1,19 @@
+<p>Prijava</p>
+<main>
+    <h4 id="poruka"></h4>
+    <div id="forma">
+        <form class="grid-container" #form="ngForm">
+            <label for="korime" class="item1">Korisničko ime: </label>
+            <input type="text" id="korime_input" name="korime" class="item2"><br>
+            <label for="lozinka" class="item3">Lozinka: </label>
+            <input type="text" id="lozinka_input" name="lozinka" class="item4"><br>
+            <input type="button" (click)="send(form)" value="Prijava" class="item5">
+        </form>
+    </div>
+    <p id="podaci">
+        Registrirani korisnik - Korisničko ime: obican | Lozinka: rwa
+    </p>
+    <p id="podaci">
+        Administrator - Korisničko ime: administrator | Lozinka: rwa
+    </p>
+</main>

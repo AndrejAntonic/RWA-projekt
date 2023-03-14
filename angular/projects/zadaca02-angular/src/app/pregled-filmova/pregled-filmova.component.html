@@ -1,0 +1,21 @@
+<p>Pregled filmova</p>
+<main>
+    <div id="glavni">
+        <div>
+            <div class="grid-container">
+                <label for="filtriranjeZanr" class="item1">Filtriranje po žanru: </label>
+                <input type="text" id="filtriranjeZanr" class="item2" name="filtriranjeZanr"><br>
+                <label for="filtriranjeDatum" class="item3">Filtriranje po datumu: </label>
+                <input type="text" id="filtriranjeDatum" class="item4" name="filtriranjeDatum">
+                <button type="button" (click)="filtriranje()" class="item5" id="filtriranje">Filtriranje</button><br>
+            </div>
+            <label for="sortiranje">Uzlazno sortiranje po: </label>
+            <button type="button" (click)="sortiranjeNaziv()" id="naziv">Nazivu</button>
+            <button type="button" (click)="sortiranjeDatum()" id="datum">Datumu</button>
+            <button type="button" (click)="sortiranjeZanr()" id="zanr">Žanru</button>
+        </div>
+        <div id="lista"></div>
+        <div id="podaci_filma"></div>
+        <button type="button" (click)="ucitajFilmove()" id="resetiraj">Resetiraj listu filmova</button>
+    </div>
+</main>

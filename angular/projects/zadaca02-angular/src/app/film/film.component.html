@@ -1,0 +1,13 @@
+<p>Filmovi</p>
+<main>
+    <div id="glavni" class="grid-container">
+        <div class="grid-child-lista">
+            <ul id="lista"></ul>
+            <label for="odabraniFilm">Upišite ID filma kojemu želite vidjeti podatke: </label>
+            <input type="text" id="odabraniFilm" name="odabraniFilm">
+            <h3 id="upozorenje"></h3>
+            <button type="button" (click)="gumbPritisnut()" id="dohvatiFilm">Dohvati podatke filma</button>
+        </div>
+        <div id="podaci_film" class="grid-child-podaci"></div>
+    </div>
+</main>

@@ -1,0 +1,48 @@
+<p>Korisnici</p>
+<main>
+    <div id="glavni" class="grid-container">
+        <div class="grid-child-lista">
+            <h3>Korisnici:</h3>
+            <ul id="lista"></ul>
+        </div>
+        <div id="azuriranje" class="grid-child-update">
+            <h3>Podaci o korisniku:</h3>
+            <h4 id="poruka"></h4>
+            <label for="korime_input" id="korime_label">Korisničko ime: </label>
+            <input type="text" (keyup)="ucitajPodatke()" id="korime_input" name="korime_input"> 
+            <ul id="azuriranje">
+                <div class="grid-proba">
+                    <li class="item1">
+                        <label id="id_label">ID: </label>
+                    </li>
+                    <li class="item2">
+                        <label id="lozinka_label">Hashana lozinka: </label>
+                    </li>
+                    <li class="item3">
+                        <label id="email_label">E-mail: </label>
+                    </li>
+                    <li class="item4">
+                        <label for="ime_input" id="ime_label">Ime: </label>
+                        <input type="text" id="ime_input" name="ime_input">
+                    </li>
+                    <li class="item5">
+                        <label for="prezime_input" id="prezime_label">Prezime: </label>
+                        <input type="text" id="prezime_input" name="prezime_input">
+                    </li>
+                    <li class="item6">
+                        <label for="totp_input" id="totp_label">TOTP ključ: </label>
+                        <input type="text" id="totp_input" name="totp_input">
+                    </li>
+                    <li class="item7">
+                        <label for="uloga_input" id="uloga_label">Uloga: </label>
+                        <input type="text" id="uloga_input" name="uloga_input">
+                        <label>1 = administrator; 2 = običan korisnik</label>
+                    </li>
+                </div>
+            </ul>
+            <h4 id="gumbPoruka"></h4>
+            <button type="button" (click)="azuriranjeKorisnika()">Ažuriraj</button>
+            <button type="button" (click)="blokirajKorisnika()">Blokiraj/Odblokiraj</button>
+        </div>
+    </div>
+</main>

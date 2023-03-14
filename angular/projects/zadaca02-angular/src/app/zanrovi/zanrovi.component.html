@@ -1,0 +1,18 @@
+<p>Žanrovi<p>
+<main>
+    <div id="glavni" class="grid-container">
+        <div class="grid-child-glavno">
+            <h3 class="item1">Popis žanrova:</h3>
+            <ol id="lista" class="item2"></ol>
+            <label for='staroZanr' class="item3">ID žanr-a kojemu želite promijeniti naziv:</label>
+            <input type='text' id='staroZanr' name='staroZanr' class="item4">&emsp;
+            <label for='novoZanr' class="item5">Novi naziv:</label>
+            <input type='text' id='novoZanr' name='novoZanr' class="item6">
+            <button type='button' (click)="promijeni()" id='promijeni' class="item7">Promijeni</button><br>
+            <h3 id="h3" class="item8"></h3>
+            <button type='button' (click)='obrisiKojiNemaju()' id='obrisi' class="item9">Obriši sve žanrove koji nemaju film</button>
+            <button type='button' (click)='dohvatiTMDB()' id='dohvatiTMDB' class="item10">Dohvati žanrove sa TMDB</button>
+        </div>
+        <div id="tmdb_lista" class="grid-child-lista"></div>
+    </div>
+</main>

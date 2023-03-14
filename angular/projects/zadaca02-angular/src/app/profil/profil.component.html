@@ -1,0 +1,19 @@
+<p>Profil</p>
+<main>
+    <div class="grid-container">
+        <div class="grid-child-lista">
+            <h3>Vaši korisnički podaci: </h3>
+            <ul id="lista"></ul>
+        </div>
+        <div id="azuriraj" class="grid-child-azuriraj">
+            <h3 class="item1">Ažuriraj podatke:</h3><br><br>
+            <label for="ime" class="item2">Ime: </label>
+            <input type="text" id="ime" name="ime" class="item3"><br>
+            <label for="prezime" class="item4">Prezime: </label>
+            <input type="text" id="prezime" name="prezime" class="item5"><br>
+            <label for="lozinka" class="item6">Lozinka: </label>
+            <input type="text" id="lozinka" name="lozinka" class="item7">
+            <button type="button" (click)="azurirajKorisnika()" class="item8">Ažuriraj</button>
+        </div>
+    </div>
+</main>
